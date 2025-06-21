@@ -1,12 +1,13 @@
-## Web Scraping Python code for Extracted MAS T-bill Statistics (HTML VERSION)
+### Web Scraping Python code for Extracted MAS T-bill Statistics (HTML VERSION)
 > This version produces a html file for an interactive yield chart allowing hovering.
+> 
+> View my [README](https://github.com/tessalau/Tessa-s-Mini-Python-Projects/blob/main/Web%20Scraping/Treasury%20Bills%20Statistics%20from%20the%20Monetary%20Authority%20of%20Singapore/README.md) file for overall approach and code design 
 
-> Click the video below for a quick preview of the html page
-<br>
-
+### Click the video below for a quick preview of the html page
+>
 > [![Link to the video](https://github.com/user-attachments/assets/8522f3eb-7da4-4070-aa1b-ec4fa34a6d91)](https://youtu.be/qkEoILvvpcs)
 
-
+### Below is the python code snippet:
 ```python
 
 
@@ -32,7 +33,7 @@ HEADERS = {
 def fetch_all_tbills():
     all_records = []
     start = 0
-    rows_per_page = 100
+    rows_per_page = 25
     from_date = "2020-01-01"
     to_date = datetime.today().strftime("%Y-%m-%d")
 
