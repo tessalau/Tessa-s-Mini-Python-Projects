@@ -1,8 +1,14 @@
-  # Python code for Extracted MAS T-bill Data
-  For brief explanation of code, please refer to readme.md  
-  
+ ### Web Scraping Python code for Extracted MAS T-bill Statistics (png VERSION)
+> This version produces a png file for presentation portability
+> 
+> View my [README](https://github.com/tessalau/Tessa-s-Mini-Python-Projects/blob/main/Web%20Scraping/Treasury%20Bills%20Statistics%20from%20the%20Monetary%20Authority%20of%20Singapore/README.md) file for overall approach and code design 
 
-``` python
+### Screenshot image of the matpilot graph
+>
+> ![image](https://github.com/user-attachments/assets/af9e3765-e849-4069-a01d-7a089fa98b08)
+
+### Below is the python code snippet:
+```python
 import requests
 import csv
 import json
@@ -22,7 +28,7 @@ HEADERS = {
 def fetch_all_tbills():
     all_records = []
     start = 0
-    rows_per_page = 15
+    rows_per_page = 25
     from_date = "2020-01-01"
     to_date = datetime.today().strftime("%Y-%m-%d")
 
